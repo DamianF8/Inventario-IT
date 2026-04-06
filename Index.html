@@ -12,11 +12,22 @@
 <body>
 
   <header>
-    <nav>
-      <strong>LOGOTIPO INPI</strong>
-      <a href="#">Inicio</a>
-      <a href="#">Nuevo Registro</a>
-      <a href="#">Listados</a>
+    <nav style="display: flex; align-items: center; background-color: #333; padding: 10px;">
+      <div class="logo">
+        <strong>LOGOTIPO INPI</strong>
+      </div>
+      <ul style="display: flex; list-style: none; gap: 20px;">
+        <a href="#">Inicio</a>
+        <a href="#">Nuevo Registro</a>
+        <li class="dropdown">
+          <a href="#">Reportes</a>
+          <ul class="dropdown-content">
+            <li><a href="#">General</a></li>
+            <li><a href="#">Por Sector</a></li>
+            <li><a href="#">Por Marca</a></li>
+          </ul>
+        </li>
+
 
 
     </nav>
