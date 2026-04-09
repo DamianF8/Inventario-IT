@@ -1,0 +1,7 @@
+nav {
+  display: flex; /*Alinea el logo y el menu en fila uno al lado del otro*/
+  justify-content: space-between; /*Separa el logo a la izquierda y el menu a la derecha*/
+  align-items: center; /*Centra verticalmente el contenido del nav*/
+  background-color: #015ebb; /*Color de fondo del nav*/
+  padding: 10px 50px; /*Espaciado interno del nav, lo primero es vertical y el segundo es horizontal*/
+}
