@@ -10,3 +10,13 @@ nav {
   display: flex; /*Alinea los elementos del menu en fila uno al lado del otro*/
   gap: 30px;
 }
+
+.menu-principal a {
+  text-decoration: none; /*Elimina el subrayado de los enlaces*/
+  color: #7d8996; /*Color del texto de los enlaces del menu*/
+  font-size: 14px; /*Tamaño de fuente de los enlaces del menu*/
+  font-family:
+    "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /*Fuente de los enlaces del menu*/
+  text-transform: uppercase; /*Convierte el texto de los enlaces del menu a mayúsculas*/
+  letter-spacing: 1px; /*Espaciado entre letras de los enlaces del menu*/
+}
