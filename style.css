@@ -1,22 +1,76 @@
+body {
+  background-color: #f4f7f6; /*Color de fondo del cuerpo de la página*/
+  color: #333333; /*Color del texto del cuerpo de la página*/
+  font-family:
+    "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /*Fuente del cuerpo de la página*/
+}
+
 nav {
   display: flex; /*Alinea el logo y el menu en fila uno al lado del otro*/
   justify-content: space-between; /*Separa el logo a la izquierda y el menu a la derecha*/
   align-items: center; /*Centra verticalmente el contenido del nav*/
-  background-color: #015ebb; /*Color de fondo del nav*/
+  background-color: #015197; /*Color de fondo del nav*/
   padding: 10px 40px; /*Espaciado interno del nav, lo primero es vertical y el segundo es horizontal*/
 }
 
 .menu-principal {
   display: flex; /*Alinea los elementos del menu en fila uno al lado del otro*/
-  gap: 30px;
+  gap: 30px; /*Espacio entre los elementos del menu*/
+  list-style: none; /*Elimina los puntos de las listas del menu*/
+  padding: 0; /*Elimina el padding de las listas del menu*/
+  margin: 0; /*Elimina el margen de las listas del menu*/
 }
 
 .menu-principal a {
   text-decoration: none; /*Elimina el subrayado de los enlaces*/
-  color: #7d8996; /*Color del texto de los enlaces del menu*/
+  color: #ffffff; /*Color del texto de los enlaces del menu*/
   font-size: 14px; /*Tamaño de fuente de los enlaces del menu*/
+  font-weight: 500; /*Grosor de la fuente de los enlaces del menu*/
   font-family:
     "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /*Fuente de los enlaces del menu*/
   text-transform: uppercase; /*Convierte el texto de los enlaces del menu a mayúsculas*/
   letter-spacing: 1px; /*Espaciado entre letras de los enlaces del menu*/
+}
+
+.menu-principal a:hover {
+  color: #82caff; /*Color del texto de los enlaces del menu al pasar el mouse por encima*/
+  transition: 0.3s; /*Duración de la transición del color de los enlaces del menu al pasar el mouse por encima*/
+}
+
+.dropdown {
+  position: relative; /*Posiciona el dropdown de forma relativa para que el submenu se posicione de forma absoluta respecto a él*/
+}
+
+
+
+.submenu {
+ display: none; /*Oculta el submenu por defecto*/
+  position: absolute; /*Posiciona el submenu de forma absoluta respecto al nav*/
+  background-color: #ffffff; /*Color de fondo del submenu*/
+  top: 100%; /*Posiciona el submenu justo debajo del nav*/
+  left: 0; /*Posiciona el submenu a la izquierda del nav*/
+  min-width: 180px; /*Ancho mínimo del submenu*/
+  list-style: none; /*Elimina los puntos de las listas del submenu*/
+  padding: 10px 0; /*Espaciado interno del submenu, lo primero es vertical y el segundo es horizontal*/
+  margin: 0; /*Elimina el margen de las listas del submenu*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Sombra del submenu*/
+  z-index: 100; /*Asegura que el submenu se muestre por encima de otros elementos*/
+}
+
+.submenu a {
+  color: #333333 !important; /*Color del texto de los enlaces del submenu*/
+  text-transform: none; /*No convierte el texto de los enlaces del submenu a mayúsculas*/
+  padding 8px 20px; /*Espaciado interno de los enlaces del submenu, lo primero es vertical y el segundo es horizontal*/
+  display: block; /*Hace que los enlaces del submenu se muestren en bloque para que ocupen todo el ancho del submenu*/
+  letter-spacing: 0; /*Elimina el espaciado entre letras de los enlaces del submenu*/
+}
+
+/* Efecto cuando paso el mouse por una opcion del menu*/
+.submenu a:hover {
+  background-color: #f4f7f6; /*Color de fondo de los enlaces del submenu al pasar el mouse por encima*/
+  color: #015197 !important; /*Color del texto de los enlaces del submenu al pasar el mouse por encima*/
+}
+  
+.dropdown:hover .submenu {
+  display: block; /*Muestra el submenu al pasar el mouse por encima del dropdown*/
 }
