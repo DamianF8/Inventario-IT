@@ -41,10 +41,8 @@ nav {
   position: relative; /*Posiciona el dropdown de forma relativa para que el submenu se posicione de forma absoluta respecto a él*/
 }
 
-
-
 .submenu {
- display: none; /*Oculta el submenu por defecto*/
+  display: none; /*Oculta el submenu por defecto*/
   position: absolute; /*Posiciona el submenu de forma absoluta respecto al nav*/
   background-color: #ffffff; /*Color de fondo del submenu*/
   top: 100%; /*Posiciona el submenu justo debajo del nav*/
@@ -60,7 +58,7 @@ nav {
 .submenu a {
   color: #333333 !important; /*Color del texto de los enlaces del submenu*/
   text-transform: none; /*No convierte el texto de los enlaces del submenu a mayúsculas*/
-  padding 8px 20px; /*Espaciado interno de los enlaces del submenu, lo primero es vertical y el segundo es horizontal*/
+  padding: 8px 20px; /*Espaciado interno de los enlaces del submenu, lo primero es vertical y el segundo es horizontal*/
   display: block; /*Hace que los enlaces del submenu se muestren en bloque para que ocupen todo el ancho del submenu*/
   letter-spacing: 0; /*Elimina el espaciado entre letras de los enlaces del submenu*/
 }
@@ -70,7 +68,7 @@ nav {
   background-color: #f4f7f6; /*Color de fondo de los enlaces del submenu al pasar el mouse por encima*/
   color: #015197 !important; /*Color del texto de los enlaces del submenu al pasar el mouse por encima*/
 }
-  
+
 .dropdown:hover .submenu {
   display: block; /*Muestra el submenu al pasar el mouse por encima del dropdown*/
 }
